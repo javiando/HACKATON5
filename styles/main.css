@@ -1,0 +1,131 @@
+html{
+    font-family:'Roboto';
+}
+
+/* .logo{
+    display: block; */
+}
+/* .logo >div{
+display: inline-flex; */
+
+/
+/* .firstcircle{
+    background-color: #316099;
+    border: #316099 solid 1px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+
+}
+.secondcircle{
+    left: 16px;
+    background-color:white;
+    border-color:#316099;
+    border: #316099 solid 1px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    
+    } */
+
+header{
+    max-width: 1366px;
+    width: 100%;
+}
+.headercontainer{
+    margin: 0 auto;
+    padding: 49px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headercontainer nav >ul{
+    display: inline-block;
+    padding: 0 20px;
+}
+.banner{
+    position: relative;
+}
+.bannerimagen{
+    display: block;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.banner h1{
+    position: absolute;
+    top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 44px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+
+}
+.banner p{
+    position: absolute;
+    padding: 0 325px;
+    top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Roboto';
+    color: white;
+}
+/*main*/
+    /*searcharbar*/
+main{
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    
+}
+.searchbar > input{
+    width: 100%;
+    padding: 20px 70px;
+    border-radius:16px;
+    border: none;
+    background-color: #F4F4F4;
+}
+h2{
+    letter-spacing: 0.04em;
+    margin: 35px;
+    margin-left: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #356EAD
+}
+
+    /*maincontentvertical*/
+.maincontentvertical article h3{
+    color: #1F3F68;
+    font-size: 36px;
+    font-weight: bold;
+
+}
+.maincontentvertical article p{
+    padding: 20px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+}
+
+.address{
+    display: flex;
+    
+}
