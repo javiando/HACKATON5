@@ -1,7 +1,17 @@
 html{
     font-family:'Roboto';
-}
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
 
+} 
+address{
+    font-size: 14px;
+    font-weight: bold;
+    color: #1F3F68;
+    letter-spacing: 0.04em;
+
+}
 /* .logo{
     display: block; */
 }
@@ -117,15 +127,123 @@ h2{
     font-weight: bold;
 
 }
-.maincontentvertical article p{
+.maincontentvertical article > p{
     padding: 20px;
     padding-left: 0;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.04em;
 }
-
-.address{
+.footerarticle{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+ }   
+ .footerarticle .icons img{
+     margin-right: 25px;
+ }
+ /* ver como separar confif de margenes en iconos*/
+
+.footerarticle .readingtime{
+    padding: 10px;
+    font-size: 14px;
+    padding-left: 0;
+    color: rgba(0, 0, 0, 0.4);
+}
+.primero{
+    display: flex;
+}
+/*maincontainervertical*/
+.containervertical {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    margin-top: 40px;
+}
+.containervertical article{
+    width: 32%;
+}
+
+.containervertical article h4{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    color: #1F3F68
+}
+.containervertical article p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-right: 0;
+}
+.maincontentvertical .footerarticle{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+}
+.seeall{
+    color: #356dadc2;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    font-weight: bold;
+    line-height: 18px;
+    margin-top: 40px;
+    text-align: right;
+}
+hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: 1px solid rgba(0,0,0,0.2);
+}
+/*allarticles*/
+.allarticles {
+    color: #356EAD;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/*containerhorizontal*/
+.containerhorizontal{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.containerhorizontal > article{
+    display: flex;
+    height: 210px;
+    margin-bottom: 30px;
+}
+
+
+.containerhorizontal article .rightside{
+    padding-left: 20px;
+}
+.containerhorizontal article .rightside > h4{
+    color: #1F3F68;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 0.04em;
     
+}
+.containerhorizontal article .rightside p{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: justify;
+    margin-top: 5px;
+}
+.containerhorizontal article .rightside .footerarticle{
+    padding-top: 45px;
+}
+.containerhorizontal article .rightside .footerarticle .icons{
+    margin-left: 25px;
 }
