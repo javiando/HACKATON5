@@ -10,15 +10,15 @@ address{
     font-weight: bold;
     color: #1F3F68;
     letter-spacing: 0.04em;
-
 }
+
 /* .logo{
     display: block; */
-}
+
 /* .logo >div{
 display: inline-flex; */
 
-/
+
 /* .firstcircle{
     background-color: #316099;
     border: #316099 solid 1px;
@@ -36,7 +36,7 @@ display: inline-flex; */
     height: 32px;
     border-radius: 50%;
     
-    } */
+     */
 
 header{
     max-width: 1366px;
@@ -96,7 +96,7 @@ header{
 main{
     width: 100%;
     max-width: 940px;
-    margin: 0 auto;
+    margin: 0 auto 80px;
     padding-top: 40px;
 }
 .searchbar{
@@ -247,3 +247,85 @@ hr{
 .containerhorizontal article .rightside .footerarticle .icons{
     margin-left: 25px;
 }
+.oldnewpost{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #356EAD;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+}
+.oldpost{
+    display: flex;
+}
+.newpost{
+    display: flex;
+    justify-content: left;
+}
+
+.oldpost :nth-child(2){
+    margin-left: 30px;
+}
+.newpost p{
+    margin-right: 30px;
+}
+/*footer*/
+footer{
+    
+}
+.footercontainer{
+    width: 1223.5px ;
+    height: 900px;
+    background-color: #316099;
+    border-radius: 0px 200px 0px 0px;
+    color: white;
+}
+.upperfooter{
+    width: 100%;
+    max-width: 940px;
+    margin-left: 213px;
+    margin-right: 126px;
+    padding: 90px 0;
+}
+.upperfooter{
+    display: flex
+}
+.upperfooter> div{
+    width: 50%;
+}
+.upperfooter h6{
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+}
+.upperfooter p{
+    margin-top: 32px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+    font-weight: lighter;
+}
+.buttonarea{
+    position: relative;
+}
+.upperfooter button{
+    width: 220px;
+    height: 56px;
+    background-color: #5A98D0;
+    border-radius: 10px;
+    border: none;
+    color: inherit;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+footer hr{
+    opacity: 0.4;
+    border: 0.5px solid #ffffff;
+}
+/*interested*/
+
+/*actualfooter*/
