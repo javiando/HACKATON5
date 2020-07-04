@@ -11,31 +11,7 @@ address {
   letter-spacing: 0.04em;
 }
 
-/* .logo{
-    display: block; */
-
-/* .logo >div{
-display: inline-flex; */
-
-/* .firstcircle{
-    background-color: #316099;
-    border: #316099 solid 1px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-
-}
-.secondcircle{
-    left: 16px;
-    background-color:white;
-    border-color:#316099;
-    border: #316099 solid 1px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    
-     */
-
+/*HEADER*/
 header {
   max-width: 1366px;
   width: 100%;
@@ -46,15 +22,49 @@ header {
   display: flex;
   justify-content: space-between;
 }
+/*logo*/
 
+.logo > div {
+  display: inline-flex;
+  position: relative;
+}
+
+.firstcircle {
+  background-color: #316099;
+  border: #316099 solid 3px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.secondcircle {
+  left: 16px;
+  background-color: white;
+  border-color: #316099;
+  border: #316099 solid 3px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+}
+.secondcircle p {
+  padding: 3px 0 0 9.5px;
+  color: #316099;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*nav*/
 .headercontainer nav > ul {
   display: inline-block;
   padding: 0 20px;
+  color: #1f3f68;
+  font-weight: bold;
 }
+/*banner*/
 .banner {
   position: relative;
 }
-.bannerimagen {
+.bannerimage {
   display: block;
   max-width: 1366px;
   width: 100%;
@@ -87,25 +97,31 @@ header {
   font-family: "Roboto";
   color: white;
 }
-/*main*/
-/*searcharbar*/
+/*MAIN*/
 main {
   width: 100%;
   max-width: 940px;
   margin: 0 auto 80px;
   padding-top: 40px;
 }
+
+/*searchbar*/
 .searchbar {
   display: flex;
   justify-content: center;
 }
 .searchbar > input {
   width: 100%;
-  padding: 20px 70px;
+
   border-radius: 16px;
   border: none;
   background-color: #f4f4f4;
+  background-image: url("/images/icon-search.png");
+  background-position: 26px 18.778px;
+  background-repeat: no-repeat;
+  padding: 20px 70px;
 }
+
 h2 {
   letter-spacing: 0.04em;
   margin: 35px;
@@ -115,13 +131,15 @@ h2 {
   color: #356ead;
 }
 
-/*maincontentvertical*/
-.maincontentvertical article h3 {
+/*uppermain*/
+/*principal-uppermain*/
+
+.uppermain article h3 {
   color: #1f3f68;
   font-size: 36px;
   font-weight: bold;
 }
-.maincontentvertical article > p {
+.uppermain article > p {
   padding: 20px;
   padding-left: 0;
   font-size: 16px;
@@ -134,10 +152,12 @@ h2 {
   align-items: center;
   padding-right: 30px;
 }
-.footerarticle .icons img {
-  margin-right: 25px;
+.uppermain .principal-uppermain .footerarticle .icons img {
+  margin: 0 25px;
 }
-/* ver como separar confif de margenes en iconos*/
+.uppermain .footerarticle .icons img {
+  margin-left: 25px;
+}
 
 .footerarticle .readingtime {
   padding: 10px;
@@ -145,11 +165,11 @@ h2 {
   padding-left: 0;
   color: rgba(0, 0, 0, 0.4);
 }
-.primero {
+.principal-uppermain {
   display: flex;
 }
-/*maincontainervertical*/
-.containervertical {
+/*others-uppermain*/
+.others-uppermain {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -157,23 +177,23 @@ h2 {
 
   margin-top: 40px;
 }
-.containervertical article {
+.others-uppermain article {
   width: 32%;
 }
 
-.containervertical article h4 {
+.others-uppermain article h4 {
   font-size: 22px;
   font-weight: bold;
   line-height: 32px;
   letter-spacing: 0.04em;
   color: #1f3f68;
 }
-.containervertical article p {
+.others-uppermain article p {
   font-size: 16px;
   line-height: 26px;
   padding-right: 0;
 }
-.maincontentvertical .footerarticle {
+.uppermain .footerarticle {
   display: flex;
   justify-content: space-between;
   padding-right: 0px;
@@ -192,7 +212,7 @@ hr {
   margin-bottom: 30px;
   color: 1px solid rgba(0, 0, 0, 0.2);
 }
-/*allarticles*/
+/*division between mains*/
 .allarticles {
   color: #356ead;
   font-size: 20px;
@@ -203,29 +223,29 @@ hr {
   margin-bottom: 30px;
 }
 
-/*containerhorizontal*/
-.containerhorizontal {
+/*lowermain*/
+.lowermain {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.containerhorizontal > article {
+.lowermain > article {
   display: flex;
   height: 210px;
   margin-bottom: 30px;
 }
 
-.containerhorizontal article .rightside {
+.lowermain article .rightside {
   padding-left: 20px;
 }
-.containerhorizontal article .rightside > h4 {
+.lowermain article .rightside > h4 {
   color: #1f3f68;
   font-size: 18px;
   font-weight: bold;
   line-height: 28px;
   letter-spacing: 0.04em;
 }
-.containerhorizontal article .rightside p {
+.lowermain article .rightside p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
   line-height: 24px;
@@ -233,10 +253,10 @@ hr {
   text-align: justify;
   margin-top: 5px;
 }
-.containerhorizontal article .rightside .footerarticle {
-  padding-top: 45px;
+.lowermain article .rightside .footerarticle {
+  padding: 30px 0 0;
 }
-.containerhorizontal article .rightside .footerarticle .icons {
+.lowermain article .rightside .footerarticle .icons > img {
   margin-left: 25px;
 }
 .oldnewpost {
@@ -261,16 +281,17 @@ hr {
 .newpost p {
   margin-right: 30px;
 }
-/*footer*/
+/*FOOTER*/
 
 .footercontainer {
-  width: 1223.5px;
+  max-width: 1223.5px;
+  width: 100%;
   background-color: #316099;
   border-radius: 0px 200px 0px 0px;
   color: white;
 }
+/*upperfooter*/
 .upperfooter {
-  width: 100%;
   max-width: 940px;
   margin-left: 213px;
   margin-right: 126px;
@@ -302,6 +323,9 @@ hr {
 .upperfooter button {
   width: 220px;
   height: 56px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
   background-color: #5a98d0;
   border-radius: 10px;
   border: none;
@@ -311,14 +335,13 @@ hr {
   top: 50%;
   right: 0px;
 }
+/*division between footers*/
 footer hr {
   opacity: 0.4;
   border: 0.5px solid #ffffff;
 }
-/*interested*/
 
-/*actualfooter*/
-
+/*lowerfooter*/
 .lowerfooter {
   width: 100%;
   max-width: 940px;
@@ -330,16 +353,38 @@ footer hr {
 .lowerfooter .afrianska {
   width: 50%;
 }
-.lowerfooter .aboutus,
 .lowerfooter .socialmedia {
-  width: 25%;
-  padding-left: 25%;
+  width: 20%;
+  padding-left: 19%;
 }
-.lowerfooter .afrianska p >span{
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: bold;
-    letter-spacing: 0.05em;
+.afrianska .logo {
+  display: flex;
+  padding-bottom: 32px;
+}
+.afrianska .logo .firstcircle {
+  background-color: #98c3e8;
+  border: #316099 solid 3px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.afrianska .logo .secondcircle p {
+  padding: 3px 0 0 8.5px;
+  color: #316099;
+  font-size: 20px;
+  font-weight: bold;
+}
+.lowerfooter .afrianska h5 {
+  font-size: 28px;
+  padding-left: 35px;
+  align-self: center;
+}
+.lowerfooter .afrianska p > span {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 .lowerfooter div > h6 {
   font-size: 20px;
@@ -349,10 +394,20 @@ footer hr {
   padding-bottom: 32px;
   margin-right: 0;
 }
-.lowerfooter div > p {
+.lowerfooter div ul > li,
+p {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.02em;
   font-weight: lighter;
   padding-bottom: 16px;
+}
+/*COPYRIGHT*/
+.copyright {
+  margin-left: 213px;
+  padding-bottom: 64px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  opacity: 0.4;
 }
